@@ -20,22 +20,30 @@
 </head>
 
 <body>
-    <nav>
-        <img src="images/logo.svg" alt="blue B logo" id="blogo">
-        <a href="#episodios" id=nav1>episodios</a>
-        <a href="#nosotros" id=nav2>nosotros</a>
-        <a href="#invitados" id=nav3>entrevistas</a>
-        <a href="#novedades" id=nav4>tópicos</a>
-    </nav>
-    <pre id="bigtitle">Hello <del>world</del> pale blue dot<span style="color: #0000EC;">.</span></pre>
-    <pre id="paragraph1">El portal de podcasts que explora el mundo de la programación y
-la tecnología. Nuevos episodios, todos los jueves cada 15 días.
-        </pre>
-    <a href="http://www.google.com" target="_blank" id="button1">CONOCÉ MÁS</a>
+    <div class="page">
+        <header>
+            <nav>
+                <div class="logo-container"><img src="/images/logo.svg" alt="blue B logo" class="blogo"></div>
+                <div class="nav-link-container">
+                    <a href="#episodios" class="nav-links">episodios</a>
+                    <a href="#nosotros" class="nav-links">nosotros</a>
+                    <a href="#invitados" class="nav-links">entrevistas</a>
+                    <a href="#novedades" class="nav-links">tópicos</a>
+                </div>
+            </nav>
+            <pre class="bigtitle">Hello <del>world</del> pale blue dot<span style="color: #0000EC;">.</span></pre>
+            <pre class="paragraph1">El portal de podcasts que explora el mundo de la programación y
+              la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+                      </pre>
+        </header>
+        <main>
+            <section>
+
+                <a href="http://www.google.com" target="_blank" id="button1">CONOCÉ MÁS</a>
 
 
-    <!--<img src="images/TEST.png" id="bluerectangle"></img>-->
-    <svg height="1440" width="1042" id=bluerectangle>
+                <!--<img src="/images/TEST.png" id="bluerectangle"></img>-->
+                <svg height="1440" width="1042" id=bluerectangle>
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="50%" y2="%">
             <stop offset="0%" style="stop-color:#0000A3;stop-opacity:1" />
@@ -46,45 +54,50 @@ la tecnología. Nuevos episodios, todos los jueves cada 15 días.
         Sorry, your browser does not support inline SVG.
       </svg>
 
-    <h3 id="episodios">Episodios</h3>
-    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" id=sp1></iframe>
-    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" id=sp2></iframe>
-    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" id=sp3></iframe>
-    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" id=sp4></iframe>
+                <h3 id="episodios">Episodios</h3>
 
-    <img src="images/phone.png" alt="phone picture" id="phonepic">
+                <div class="iframe-container">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0" allow="encrypted-media" id=sp1></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" allow="encrypted-media" id=sp2></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" allow="encrypted-media" id=sp3></iframe>
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0" allow="encrypted-media" id=sp4></iframe>
+                </div>
+                <img src="/images/phone.png" alt="phone picture" id="phonepic">
 
-    <h3 id="nosotros">De dónde venimos</h3>
-    <p id="paragraph2">Our posturings, our imagined self-importance,<br> the delusion that we have some privileged
-        <br>position in the Universe, are challenged<br>by this point of pale light.<br><br>Our planet is a lonely speck in the great<br> enveloping cosmic dark. In our obscurity, in all
-        <BR>this vastness, there is no hint that help will<br>come from elsewhere to save us from ourselves.</p>
-    <h3 id=invitados>Invitadas/os estelares</h3>
-    <div>
-        <img src="images/grace-hopper.png" alt="Grace Hopper" id="bottompics1">
-        <img src="images/Katie-Bouman.png" alt="Katie Bouman" id="bottompics2">
-        <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton" id="bottompics3">
-        <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s" id="bottompics4">
-        <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer" id="bottompics5">
-        <img src="images/susan-kare.png" alt="susan-kare" id="bottompics6">
-    </div>
+                <h3 id="nosotros">De dónde venimos</h3>
+                <p id="paragraph2">Our posturings, our imagined self-importance,<br> the delusion that we have some privileged
+                    <br>position in the Universe, are challenged<br>by this point of pale light.<br><br>Our planet is a lonely speck in the great<br> enveloping cosmic dark. In our obscurity, in all
+                    <BR>this vastness, there is no hint that help will<br>come from elsewhere to save us from ourselves.</p>
+            </section>
+            <section>
+                <h3 id=invitados>Invitadas/os estelares</h3>
+                <div>
+                    <img src="/images/grace-hopper.png" alt="Grace Hopper" id="bottompics1">
+                    <img src="/images/Katie-Bouman.png" alt="Katie Bouman" id="bottompics2">
+                    <img src="/images/Margaret_Hamilton.png" alt="Margaret Hamilton" id="bottompics3">
+                    <img src="/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s" id="bottompics4">
+                    <img src="/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer" id="bottompics5">
+                    <img src="/images/susan-kare.png" alt="susan-kare" id="bottompics6">
+                </div>
+            </section>
+            <section>
+                <h3 id=temas>Algunos de nuestros temas</h3>
+                <div>
+                    <img src="/images/icon1.svg" alt="trabajo remoto" id=ic1>
+                    <img src="/images/icon2.svg" alt="repensando programacion" id=ic2>
+                    <img src="/images/icon3.svg" alt="bases en codigo" id=ic3>
+                    <img src="/images/icon4.svg" alt="Seguridad informatica" id=ic4>
+                </div>
+                <div>
+                    <p id=tem1>Trabajo remoto</p>
+                    <p id=tem2>Repensando la<br>programacion</p>
+                    <p id=tem3>bases del código</p>
+                    <p id=tem4>Seguridad<br>informatica</p>
+                </div>
 
-    <h3 id=temas>Algunos de nuestros temas</h3>
-    <div>
-        <img src="images/icon1.svg" alt="trabajo remoto" id=ic1>
-        <img src="images/icon2.svg" alt="repensando programacion" id=ic2>
-        <img src="images/icon3.svg" alt="bases en codigo" id=ic3>
-        <img src="images/icon4.svg" alt="Seguridad informatica" id=ic4>
-    </div>
-    <div>
-        <p id=tem1>Trabajo remoto</p>
-        <p id=tem2>Repensando la<br>programacion</p>
-        <p id=tem3>bases del código</p>
-        <p id=tem4>Seguridad<br>informatica</p>
-    </div>
-
-    <!--<rectangle id="bluerectangle2"></rectangle>-->
-    <!--<img src="images/TEST2.png" id="bluerectangle2"></img>-->
-    <svg height="1440" width="518" id=bluerectangle2>
+                <!--<rectangle id="bluerectangle2"></rectangle>-->
+                <!--<img src="/images/TEST2.png" id="bluerectangle2"></img>-->
+                <svg height="1440" width="518" id=bluerectangle2>
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="50%" y2="%">
             <stop offset="0%" style="stop-color:#0000A3;stop-opacity:1" />
@@ -95,20 +108,23 @@ la tecnología. Nuevos episodios, todos los jueves cada 15 días.
         Sorry, your browser does not support inline SVG.
       </svg>
 
-    <h3 id=novedades>¿Querés las últimas novedades?</h3>
-    <a href="http://www.google.com" target="_blank" id="button2">ESCUCHÁ LOS EPISODIOS</a>
-
-
-    <footer>
-        <p id=copyright>© 2019— Hello blue pale dot</p>
-        <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
-    </footer>
-
-
+                <h3 id=novedades>¿Querés las últimas novedades?</h3>
+                <a href="http://www.google.com" target="_blank" id="button2">ESCUCHÁ LOS EPISODIOS</a>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p id=copyright>© 2019— Hello blue pale dot</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
